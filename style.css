@@ -5,6 +5,7 @@ body {
     height: 100vh;
     background-color: slategray;
     flex-direction: column;
+    font-style: none;
 }
 
 #play {

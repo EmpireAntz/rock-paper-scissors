@@ -14,6 +14,7 @@ playButton.addEventListener('click', playGame)
 
 function playGame() {
     var userinput = prompt("Choose your weapon! [r, p, s]")
+    userinput = userinput.toLowerCase()
 
     if (!userinput) {
         return
@@ -29,6 +30,7 @@ function playGame() {
     var computerChoice = options[randomIndex]
 
     alert("Your foe has chosen " + computerChoice)
+
 
     if (userinput === computerChoice) {
         alert("Its a tie!")
