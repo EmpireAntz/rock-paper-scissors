@@ -4,6 +4,14 @@ var ties = 0
 
 var options = ['r', 'p', 's']
 
+var playButton = document.querySelector("#play")
+var score = document.querySelector("#scoreboard")
+var winEl = document.querySelector("#wins")
+var lossEl = document.querySelector("#losses")
+var tieEl = document.querySelector("#ties")
+
+playButton.addEventListener('click', playGame)
+
 function playGame() {
     var userinput = prompt("Choose your weapon! [r, p, s]")
 
@@ -38,17 +46,29 @@ function playGame() {
         alert("You Lose!😜")
         losses++
     }
-
+    
     alert(`
-        Standings: 
-            Wins:   ${wins} 
-            Losses: ${losses}
-            Ties:   ${ties}
+    Standings: 
+    Wins:   ${wins} 
+    Losses: ${losses}
+    Ties:   ${ties}
     
     `)
-
-    return playGame()
-   
+    
+    var playAgain = confirm("Would you like to play again?")
+    
+    if (playAgain) {
+        return playGame()
+    }
+    else {
+        alert("Come back soon!")
+        
+        winEl.innerHTML = wins
+        lossEl.innerHTML = losses
+        tieEl.innerHTML = ties
+    }
+    
+    
 }
 
-playGame()
+

@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: slategray;
+    flex-direction: column;
+}
+
+#play {
+    height: 25vh;
+    width: 50vh;
+    font-size: 5vh;
+    border: 2px solid;
+    border-radius: 20px;
+    background:linear-gradient(rgb(247, 0, 255), rgb(0, 162, 255));
+}
+
+#play:hover {
+    background:linear-gradient(rgb(141, 0, 146), rgb(0, 96, 151));
+}
+
+#scoreboard {
+    font-size: 3vh;
+}
