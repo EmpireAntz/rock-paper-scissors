@@ -14,11 +14,11 @@ body {
     font-size: 5vh;
     border: 2px solid;
     border-radius: 20px;
-    background:linear-gradient(rgb(247, 0, 255), rgb(0, 162, 255));
+    background:linear-gradient(rgb(56, 56, 56), rgb(151, 151, 151));
 }
 
 #play:hover {
-    background:linear-gradient(rgb(141, 0, 146), rgb(0, 96, 151));
+    background:linear-gradient(rgb(31, 31, 31), rgb(110, 110, 110));
 }
 
 #scoreboard {
